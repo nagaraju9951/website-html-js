@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR & ASSOCIATES Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'Home')">Home</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'About')">About Us</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'Services')">Services</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'Contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+          <!-- logo -->
+        <div id="navbar">
+            <a href="#default" id="logo">PNR & ASSOCIATES</a>
+            <div id="navbar-right"> 
+            </div>
+          </div>
+
+         <!-- Sections with IDs for tab HOME -->
+        <section id="Home" class="tabcontent">
+            <h1>Welcome to My Website</h1>
+            <div class="image-block">
+                <img src="/home/nagaraju/Downloads/Naga-CA/src/images/ca1.jpg" alt="Image 1">
+                <p>Description for Image 1</p>
+            </div>
+        </section>
+
+         <!-- Sections with IDs for tab About  -->
+        <section id="About" class="tabcontent" style="display:none;">
+            <h1>About Us</h1>
+            <p>Welcome to our website. We provide various services to help you.</p>
+        </section>
+
+    <!-- Sections with IDs for tab Service -->  
+    
+    
+        <section id="Services" class="tabcontent" style="display:none;">
+            <h1>Services</h1>
+            <p>We offer a range of services to meet your needs:</p>
+
+            <div class="navbar">
+            <div class="subnav">
+                <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                  <a href="#bring">Gst Returns</a>
+                  <a href="#deliver">Income Tax Returns</a>
+                  <a href="#package">TDS/TCS Filing</a>
+                  <a href="#express">SFT Returns Etc....</a>
+                  <a href="#express">PAN CARD AND PASSPORT SERVICES</a>
+                  <a href="#express">Tally Works</a>
+                </div>
+              </div>
+             </div>
+              
+             <div id="gstReturns" class="service-content">
+                <h2>Gst Returns</h2>
+                <p>Description and details about GST Returns service...</p>
+            </div>
+        
+            <div id="incomeTaxReturns" class="service-content">
+                <h2>Income Tax Returns</h2>
+                <p>Description and details about Income Tax Returns service...</p>
+            </div>
+        
+            <div id="tdsTcsFiling" class="service-content">
+                <h2>TDS/TCS Filing</h2>
+                <p>Description and details about TDS/TCS Filing service...</p>
+            </div>
+        
+            <div id="sftReturns" class="service-content">
+                <h2>SFT Returns Etc....</h2>
+                <p>Description and details about SFT Returns service...</p>
+            </div>
+        
+            <div id="panPassport" class="service-content">
+                <h2>PAN CARD AND PASSPORT SERVICES</h2>
+                <p>Description and details about PAN Card and Passport services...</p>
+            </div>
+        
+            <div id="tallyWorks" class="service-content">
+                <h2>Tally Works</h2>
+                <p>Description and details about Tally Works service...</p>
+            </div>
+        
+        </section>
+
+        
+        <!-- Sections with IDs for tab contect -->
+        <section id="Contact" class="tabcontent" style="display:none;">
+            <h1>Contact</h1>
+            <p>Feel free to get in touch with us through our contact form.</p>
+
+            <div class="bg-img">
+                <form action="/action_page.php" class="container">
+
+            
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="INDIA">INDIA</option>
+
+                    <h1>Select Your State</h1>
+                    
+                    <label for="state">State</label>
+                    <input list="states" name="state" id="state" placeholder="Select or type a state">
+                    <datalist id="states">
+                        <option value="Andhra Pradesh">
+                        <option value="Telangana">
+                        <option value="Karnataka">
+                        <option value="Tamil Nadu">
+                        <option value="Kerala">
+                        <!-- Add more state options as needed -->
+                    </datalist>         
+                    
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+            
+        </section>
+    </main>
+    <script src="/home/nagaraju/Downloads/Naga-CA/src/script.js"></script>
+</body>
+</html>
